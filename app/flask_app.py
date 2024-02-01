@@ -4,7 +4,7 @@ import requests
 app = Flask(__name__)
 
 # Render the input form page
-@app.route('/')
+@app.route('/') # represents last part of URL eg /Model1 etc.
 def input_form():
     return render_template('input_form.html')
 
